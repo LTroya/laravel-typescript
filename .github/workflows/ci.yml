@@ -34,6 +34,7 @@ jobs:
       - name: Install dependencies
         run: |
           cp .env.ci .env
+          cat .env
           composer install
 
       - name: Run tests
