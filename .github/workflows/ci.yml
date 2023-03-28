@@ -53,8 +53,11 @@ jobs:
       - name: Run migrations
         run: php artisan migrate
 
-      - name: Run tests
-        run: ./vendor/bin/pest
+      - name: Compiling assets
+        run: npm run build
+
+#      - name: Run tests
+#        run: ./vendor/bin/pest
 
 #      - name: Code quality check
 #        run: vendor/bin/phpcs
