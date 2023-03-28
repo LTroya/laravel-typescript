@@ -66,8 +66,8 @@ jobs:
           npm --version
           npm run build
 
-#      - name: Run tests
-#        run: ./vendor/bin/pest
+      - name: Run tests
+        run: ./vendor/bin/pest
 
 #      - name: Code quality check
 #        run: vendor/bin/phpcs
