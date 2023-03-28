@@ -44,6 +44,9 @@ jobs:
       - name: Install composer dependencies
         run: composer install
 
+      - name: Laravel key generation
+        run: php artisan key:generate
+
       - name: Copy .env variables
         run: cp .env.example .env
 
