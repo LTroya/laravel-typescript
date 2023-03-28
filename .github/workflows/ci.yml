@@ -7,6 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      APP_NAME: Laravel
+      APP_ENV: local
+      APP_KEY: base64:FAjowcH7BOLDtI6MAm6IgL3ExySZZxOiEpZhllhsrrk:
+      APP_DEBUG: true
       DB_CONNECTION: mysql
       DB_HOST: 127.0.0.1
       DB_PORT: 3306
