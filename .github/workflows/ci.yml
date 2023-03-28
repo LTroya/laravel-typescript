@@ -32,7 +32,9 @@ jobs:
           extensions: bcmath, ctype, fileinfo, json, mbstring, openssl, pdo, tokenizer, xml, pdo_mysql, redis
 
       - name: Install dependencies
-        run: composer install
+        run: |
+          cp .env.ci .env
+          composer install
 
       - name: Run tests
         run: ./vendor/bin/pest
