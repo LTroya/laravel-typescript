@@ -37,6 +37,9 @@ jobs:
           cat .env
           composer install
 
+      - name: Run migrations
+        run: php artisan migrate
+
       - name: Run tests
         run: ./vendor/bin/pest
 
